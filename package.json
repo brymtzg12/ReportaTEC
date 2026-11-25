@@ -1,0 +1,22 @@
+{
+  "name": "reportatec",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Reportes ciudadanos de servicios públicos para San Pedro de las Colonias, Coahuila.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
+    "vite": "^8.3.8"
+  }
+}

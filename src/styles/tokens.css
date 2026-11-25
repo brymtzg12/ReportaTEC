@@ -1,0 +1,95 @@
+/* Tokens de diseño · dirección «Ventanilla y sello»
+   Papel cálido, verde institucional y un único acento naranja de sello oficial.
+   Todo el CSS de la app consume estas variables. */
+
+:root {
+  /* Color */
+  --color-fondo: #F3EFE7;
+  --color-superficie: #FBF9F4;
+  --color-linea: #D9D1C3;          /* filetes y separadores */
+  --color-linea-control: #8C8273;  /* bordes de campos (≥ 3:1 sobre el fondo) */
+  --color-texto: #1C1B18;
+  --color-texto-suave: #5F594F;
+  --color-primario: #1F3A34;       /* verde institucional */
+  --color-sobre-primario: #F3EFE7;
+  --color-acento: #C2410C;         /* rellenos y sellos */
+  --color-acento-texto: #9A3412;   /* texto en color acento (≥ 4.5:1) */
+  --color-sobre-acento: #FFFFFF;
+  --color-acento-tenue: #F6E3D6;
+  --color-foco: #C2410C;
+  --color-exito: #2F6B45;
+  --color-error: #A4261D;
+  --color-error-tenue: #F7E1DE;
+
+  /* Tipografía */
+  --fuente-display: "Bricolage Grotesque", "Arial Narrow", sans-serif;
+  --fuente-texto: "Onest", system-ui, sans-serif;
+  --fuente-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --texto-xs: 0.8125rem;
+  --texto-sm: 0.9375rem;
+  --texto-base: 1.0625rem;
+  --texto-lg: 1.25rem;
+  --texto-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --texto-2xl: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+  --texto-3xl: clamp(2.6rem, 1.5rem + 5vw, 5rem);
+
+  --interlineado-titular: 1.02;
+  --interlineado-texto: 1.55;
+  --tracking-titular: -0.025em;
+  --tracking-etiqueta: 0.09em;
+
+  /* Espaciado (escala de 4 px) */
+  --esp-1: 0.25rem;
+  --esp-2: 0.5rem;
+  --esp-3: 0.75rem;
+  --esp-4: 1rem;
+  --esp-5: 1.25rem;
+  --esp-6: 1.5rem;
+  --esp-8: 2rem;
+  --esp-10: 2.5rem;
+  --esp-12: 3rem;
+  --esp-16: 4rem;
+
+  /* Forma */
+  --radio-sm: 3px;
+  --borde: 1px solid var(--color-linea);
+  --borde-control: 1px solid var(--color-linea-control);
+  --sombra-dura: 4px 4px 0 var(--color-texto);
+  --sombra-dura-sm: 2px 2px 0 var(--color-texto);
+
+  /* Movimiento */
+  --curva: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duracion-rapida: 150ms;
+  --duracion-media: 250ms;
+  --duracion-lenta: 500ms;
+
+  /* Layout */
+  --ancho-lectura: 62ch;
+  --ancho-formulario: 40rem;
+  --ancho-max: 72rem;
+  --tactil: 44px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fondo: #121614;
+    --color-superficie: #1A201D;
+    --color-linea: #2D3631;
+    --color-linea-control: #6B776F;
+    --color-texto: #E9E6DD;
+    --color-texto-suave: #A3A89F;
+    --color-primario: #9CC5B5;
+    --color-sobre-primario: #121614;
+    --color-acento: #F0743E;
+    --color-acento-texto: #F0743E;
+    --color-sobre-acento: #121614;
+    --color-acento-tenue: #3A2419;
+    --color-foco: #F0743E;
+    --color-exito: #7BC096;
+    --color-error: #FF8A7F;
+    --color-error-tenue: #3A1D1A;
+    --sombra-dura: 4px 4px 0 #000;
+    --sombra-dura-sm: 2px 2px 0 #000;
+  }
+}
