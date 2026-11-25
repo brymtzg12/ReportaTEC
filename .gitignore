@@ -1,0 +1,19 @@
+# Dependencias y compilación
+node_modules/
+dist/
+
+# Claves: nunca se suben al repositorio (usa .env.example como guía)
+.env
+.env.local
+.env.*.local
+
+# Documentos de selección de roles: tienen evaluaciones personales del equipo
+Seleccion_Roles/
+
+# Sistema y editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.vscode/*
+!.vscode/extensions.json
