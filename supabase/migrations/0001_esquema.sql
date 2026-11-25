@@ -1,8 +1,3 @@
--- ============================================================
--- ReportaTEC · 0001 · Esquema de la base de datos
--- Se corre una sola vez en Supabase → SQL Editor, en orden: 0001, 0002 y luego seed.sql.
--- ============================================================
-
 create extension if not exists postgis with schema extensions;
 
 -- ---------- Tipos ----------

@@ -1,14 +1,4 @@
--- ============================================================
--- ReportaTEC · 0002 · Seguridad (RLS), almacenamiento de fotos y creación de reportes
---
--- Reglas:
---   · Cualquiera puede leer los catálogos (categorías, colonias, zonas, dependencias).
---   · El ciudadano (anon) NO lee ni modifica tablas: solo crea reportes con crear_reporte()
---     y sube fotos al bucket.
---   · Un funcionario solo ve los reportes de su dependencia y solo puede cambiar su estado.
--- ============================================================
 
--- ---------- Función auxiliar ----------
 -- Dependencia del funcionario con sesión iniciada (null si no es funcionario).
 create or replace function public.mi_dependencia()
 returns smallint

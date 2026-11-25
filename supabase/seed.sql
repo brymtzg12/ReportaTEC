@@ -1,10 +1,4 @@
--- ============================================================
--- ReportaTEC · Datos de arranque
--- PROVISIONALES: categorías, dependencias y zonas de trabajo. La tabla definitiva
--- (categoría → dependencia y colonias/ejidos por zona, con datos del INEGI) la entrega
--- la Líder + Analista; cuando esté, se reemplazan los INSERT de abajo.
--- Las localidades marcadas «de ejemplo» son de prueba y se deben borrar.
--- ============================================================
+
 
 insert into public.dependencias (nombre, descripcion) values
   ('Servicios Públicos Municipales', 'Recolección de basura y limpieza'),
